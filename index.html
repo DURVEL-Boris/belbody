@@ -18,8 +18,8 @@
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 400;
-    background: #0a0a0a;
-    color: #FFFFFF;
+    background: #f1f1f1;
+    color: #484537;
     line-height: 1.6;
     overflow-x: hidden;
   }
@@ -28,15 +28,15 @@
   a { color: inherit; text-decoration: none; }
 
   :root {
-    --bg: #0a0a0a;
-    --surface: #111111;
-    --surface-2: #0d0d0d;
-    --border: #222222;
-    --gold: #C9A84C;
-    --gold-soft: rgba(201, 168, 76, 0.12);
-    --gold-glow: rgba(201, 168, 76, 0.25);
-    --text: #FFFFFF;
-    --text-muted: #888888;
+    --bg: #f1f1f1;
+    --surface: #ffffff;
+    --surface-2: #fafafa;
+    --border: #d4d4d4;
+    --gold: #526658;
+    --gold-soft: rgba(82, 102, 88, 0.08);
+    --gold-glow: rgba(82, 102, 88, 0.15);
+    --text: #484537;
+    --text-muted: #6b6b6b;
     --max-width: 1200px;
     --font-display: 'Fraunces', 'Times New Roman', serif;
   }
@@ -103,22 +103,23 @@
   }
   .btn-primary {
     background: var(--gold);
-    color: #0a0a0a;
+    color: #ffffff;
     box-shadow: 0 0 0 0 var(--gold-glow);
   }
   .btn-primary:hover {
-    background: #d4b35a;
+    background: #3d4e45;
     transform: translateY(-2px);
     box-shadow: 0 8px 24px -8px var(--gold-glow);
   }
   .btn-secondary {
-    border: 1px solid var(--border);
-    color: var(--text);
+    border: 1px solid var(--gold);
+    color: var(--gold);
     background: transparent;
   }
   .btn-secondary:hover {
+    background: var(--gold);
+    color: #ffffff;
     border-color: var(--gold);
-    color: var(--gold);
   }
   .btn-large {
     padding: 18px 34px;
@@ -140,14 +141,14 @@
     top: 0; left: 0; right: 0;
     z-index: 100;
     padding: 20px 0;
-    background: rgba(10, 10, 10, 0.6);
+    background: rgba(241, 241, 241, 0.6);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease;
   }
   .navbar.scrolled {
-    background: rgba(10, 10, 10, 0.92);
+    background: rgba(241, 241, 241, 0.95);
     border-bottom-color: var(--border);
     padding: 14px 0;
   }
@@ -374,7 +375,7 @@
   }
   .price-card.featured {
     border-color: var(--gold);
-    background: linear-gradient(180deg, rgba(201, 168, 76, 0.08) 0%, var(--surface) 50%);
+    background: linear-gradient(180deg, rgba(82, 102, 88, 0.08) 0%, var(--surface) 50%);
     transform: scale(1.02);
   }
   .price-card.featured:hover { transform: scale(1.02) translateY(-4px); }
@@ -384,7 +385,7 @@
     left: 50%;
     transform: translateX(-50%);
     background: var(--gold);
-    color: #0a0a0a;
+    color: #ffffff;
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 2px;
@@ -436,7 +437,7 @@
     gap: 12px;
     padding: 8px 0;
     font-size: 0.95rem;
-    color: #ccc;
+    color: var(--text);
   }
   .price-features li::before {
     content: '✓';
@@ -475,7 +476,7 @@
   }
   .testimonial-quote {
     font-style: italic;
-    color: #ddd;
+    color: var(--text-muted);
     line-height: 1.7;
     margin-bottom: 28px;
     font-size: 1rem;
@@ -546,7 +547,7 @@
   }
   .step:hover .step-num {
     background: var(--gold);
-    color: #0a0a0a;
+    color: #ffffff;
     box-shadow: 0 0 24px var(--gold-glow);
   }
   .step-content {
@@ -747,7 +748,7 @@
     padding: 14px 0;
     border-bottom: 1px solid var(--border);
     font-size: 0.98rem;
-    color: #ddd;
+    color: var(--text);
   }
   .booking-perks li:last-child { border-bottom: none; }
   .booking-perks li::before {
@@ -795,7 +796,7 @@
     font-size: 13px;
     font-weight: 500;
     margin-bottom: 8px;
-    color: #ddd;
+    color: var(--text);
     letter-spacing: 0.2px;
   }
   .field label .req { color: var(--gold); margin-left: 3px; }
@@ -810,11 +811,11 @@
     font-size: 0.95rem;
     transition: border-color 0.2s ease, background 0.2s ease;
   }
-  .field input:hover, .field textarea:hover { border-color: #333; }
+  .field input:hover, .field textarea:hover { border-color: #aaa; }
   .field input:focus, .field textarea:focus {
     outline: none;
     border-color: var(--gold);
-    background: #0f0f0f;
+    background: #ffffff;
   }
   .field textarea { resize: vertical; min-height: 90px; }
   .field-row {
@@ -850,12 +851,12 @@
     cursor: pointer;
     transition: border-color 0.2s ease, background 0.2s ease;
   }
-  .select-trigger:hover { border-color: #333; }
+  .select-trigger:hover { border-color: #aaa; }
   .select-wrap.open .select-trigger,
   .select-trigger:focus-visible {
     outline: none;
     border-color: var(--gold);
-    background: #0f0f0f;
+    background: #ffffff;
   }
   .select-value {
     flex: 1;
@@ -875,13 +876,13 @@
     position: absolute;
     top: calc(100% + 6px);
     left: 0; right: 0;
-    background: #0f0f0f;
+    background: #ffffff;
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 6px;
     list-style: none;
     z-index: 50;
-    box-shadow: 0 18px 40px -16px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(201, 168, 76, 0.05);
+    box-shadow: 0 18px 40px -16px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(82, 102, 88, 0.06);
     opacity: 0;
     transform: translateY(-6px);
     pointer-events: none;
@@ -889,11 +890,11 @@
     max-height: 280px;
     overflow-y: auto;
     scrollbar-width: thin;
-    scrollbar-color: #333 transparent;
+    scrollbar-color: #d4d4d4 transparent;
   }
   .select-panel::-webkit-scrollbar { width: 6px; }
   .select-panel::-webkit-scrollbar-track { background: transparent; }
-  .select-panel::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 3px; }
+  .select-panel::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 3px; }
   .select-wrap.open .select-panel {
     opacity: 1;
     transform: translateY(0);
@@ -902,7 +903,7 @@
   .select-option {
     padding: 11px 14px;
     font-size: 0.93rem;
-    color: #ddd;
+    color: var(--text);
     border-radius: 6px;
     cursor: pointer;
     display: flex;
@@ -929,7 +930,7 @@
   .submit-btn {
     width: 100%;
     background: var(--gold);
-    color: #0a0a0a;
+    color: #ffffff;
     padding: 16px 26px;
     font-size: 15px;
     font-weight: 500;
@@ -943,7 +944,7 @@
     margin-top: 8px;
   }
   .submit-btn:hover {
-    background: #d4b35a;
+    background: #3d4e45;
     transform: translateY(-2px);
     box-shadow: 0 8px 24px -8px var(--gold-glow);
   }
@@ -1038,7 +1039,7 @@
     .contacts-grid { grid-template-columns: 1fr; }
   }
 
-  ::selection { background: var(--gold); color: #0a0a0a; }
+  ::selection { background: var(--gold); color: #ffffff; }
 </style>
 </head>
 
@@ -1096,7 +1097,6 @@
     <span class="section-tag">Le problème</span>
     <h2 class="section-title">Tu t'entraînes, mais rien ne change.</h2>
     <p class="section-subtitle">Tu donnes tout à la salle, tu fais attention à ce que tu manges, mais ton corps ne suit pas. Ce n'est pas un manque d'effort — c'est un manque de méthode.</p>
-
     <div class="problem-grid">
       <div class="problem-card">
         <div class="problem-icon">01</div>
