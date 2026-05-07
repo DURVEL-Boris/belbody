@@ -1092,6 +1092,7 @@
 
 <section class="section">
   <div class="container">
+    <p style="text-align:center;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1.5rem;">⚡ Places limitées</p>
     <span class="section-tag">Le problème</span>
     <h2 class="section-title">Tu t'entraînes, mais rien ne change.</h2>
     <p class="section-subtitle">Tu donnes tout à la salle, tu fais attention à ce que tu manges, mais ton corps ne suit pas. Ce n'est pas un manque d'effort — c'est un manque de méthode.</p>
@@ -1160,10 +1161,10 @@
         <div class="price-period">essai gratuit</div>
         <p class="price-desc">Goûte à la méthode sans engagement. Idéal pour tester l'approche avant de t'engager.</p>
         <ul class="price-features">
-          <li>Quiz de profil express</li>
-          <li>Programme basique généré automatiquement</li>
+          <li>Analyse Rapide de ton profil</li>
+          <li>Programme basique</li>
           <li>Conseils nutritionnels de base</li>
-          <li>Accès limité à la bibliothèque</li>
+          <li>Un point sur ton programme</li>
         </ul>
         <a href="#reservation" data-formule="essai" class="btn btn-secondary">Commencer l'essai</a>
       </div>
@@ -1350,11 +1351,11 @@
           <li>Diagnostic complet de ta situation actuelle</li>
           <li>Plan d'action concret pour tes 90 prochains jours</li>
           <li>Recommandation de la formule adaptée à ton profil</li>
-          <li>Aucune pression commerciale — tu repars avec de la valeur</li>
+          <li>Aucune pression : tu repars avec de la valeur</li>
         </ul>
 
         <div class="booking-meta">
-          <span><span class="dot"></span> Réponse sous 24h</span>
+          <span><span class="dot"></span> Réponse sous 48h</span>
           <span><span class="dot"></span> Sans engagement</span>
           <span><span class="dot"></span> 100% gratuit</span>
         </div>
@@ -1376,8 +1377,8 @@
               <input type="email" id="email" name="Email" required autocomplete="email">
             </div>
             <div class="field">
-              <label for="whatsapp">WhatsApp</label>
-              <input type="tel" id="whatsapp" name="WhatsApp" placeholder="+596 ..." autocomplete="tel">
+              <label for="whatsapp">WhatsApp <span class="req">*</span></label>
+              <input type="tel" id="whatsapp" name="WhatsApp" placeholder="+596 ..." autocomplete="tel" required>
             </div>
           </div>
 
@@ -1410,10 +1411,10 @@
 
           <div class="field-row">
             <div class="field">
-              <label for="formule">Formule envisagée</label>
+              <label for="formule">Formule envisagée <span class="req">*</span></label>
               <div class="select-wrap">
-                <select id="formule" name="Formule envisagée" class="select-native">
-                  <option value="">Pas encore décidé</option>
+                <select id="formule" name="Formule envisagée" required class="select-native">
+                  <option value="">Choisir...</option>
                   <option value="essai">Essai gratuit</option>
                   <option value="starter">Starter — 35€/mois</option>
                   <option value="pro">Pro — 75€/mois</option>
@@ -1421,10 +1422,10 @@
               </div>
             </div>
             <div class="field">
-              <label for="creneau">Créneau préféré</label>
+              <label for="creneau">Créneau préféré <span class="req">*</span></label>
               <div class="select-wrap">
-                <select id="creneau" name="Créneau préféré" class="select-native">
-                  <option value="">Indifférent</option>
+                <select id="creneau" name="Créneau préféré" required class="select-native">
+                  <option value="">Choisir...</option>
                   <option value="matin">Matin (8h-12h)</option>
                   <option value="midi">Midi (12h-14h)</option>
                   <option value="apres-midi">Après-midi (14h-18h)</option>
@@ -1472,13 +1473,13 @@
         </div>
       </a>
 
-      <a href="mailto:belbody@gmail.com" class="contact-item">
+      <a href="mailto:contact.belbody@gmail.com" class="contact-item">
         <div class="contact-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
         </div>
         <div class="contact-info">
           <div class="label">Email</div>
-          <div class="value">belbody@gmail.com</div>
+          <div class="value">contact.belbody@gmail.com</div>
         </div>
       </a>
     </div>
@@ -1497,7 +1498,7 @@
         <li><a href="#contacts">Contact</a></li>
       </ul>
     </div>
-    <div class="footer-copy">© 2025 BèlBody Coaching — Martinique</div>
+    <div class="footer-copy">© 2025 BèlBody Coaching</div>
   </div>
 </footer>
 
